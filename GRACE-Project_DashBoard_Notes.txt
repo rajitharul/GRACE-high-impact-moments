@@ -1,0 +1,32 @@
+GRACE
+
+
+
+Cricket Prediction Dash Board 
+
+
+********************************************Over By Over Final Score Prediction - Duli **************************************
+
+-------Static Information (Which doesnt chnage according to the over) - Countries , Match Number ,Date 
+
+
+-------- Dynamic Information (Which changes over by over)-------------------
+Columns To Show  - Over (1/2..) , Starting Team Score , Current Run Rate , Total_Wickets , Batsmans on Strike, Batsman Off Strike , Bowler 
+		  Eg  -    2    ,  5 			, 	5	, 	0	,  jj roy	     ,  AD Hales 	  , Sohail Tanweer 
+
+Predicted Column  - Final Score  - 210	 
+
+
+******************************************** High Impact Moments Over By Over - Raji **************************************
+
+-------Static Information (Which doesnt chnage according to the over) - Countries , Match Number ,Date 
+
+
+-------- Dynamic Information (Which changes over by over)-------------------
+Columns To Show  - Over (1/2..) , Starting Team Score , Current Run Rate , Total_Wickets , Batsmans on Strike, Batsman Off Strike , Bowler 
+		  Eg  -    2    ,  5 			, 	5	, 	0	,  jj roy	     ,  AD Hales 	  , Sohail Tanweer 
+
+Predicted Columns  - 1 . Predicted Over Runs   - 8
+		   - 1 . Predicted Boundary Percentage   - 80%
+		   - 1 . Predicted Boundary'   - 65%
+		   - 1 . Predicted Wicket Falling   - 65%

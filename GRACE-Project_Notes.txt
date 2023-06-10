@@ -1,0 +1,122 @@
+PRAISE THE LORD ALMIGHTY FATHER Thank You JESUS Praise You JESUS Forever May the HOLY SPIRIT Guide Us MOTHER MARY PRAY For Us SAINT JOSEPH, PRAY For Us 
+SAINT ANTHONY PRAY For Us AMEN 🧡⛪✝ GOD BLESS !!! ✝⛪🧡⛪✝
+
+
+
+'wickets_fallen', 'sixers', 'fours', 'total_runs'
+
+
+---- When Changing Testing Date Range - Change the Date and Time a bit 
+test_Date = pd.to_datetime('2022-11-01')
+X_test  =  df_final[df_final['date'] > test_Date]
+X_test
+
+X_test[cols_to_scale] = scaler.transform(X_test[cols_to_scale])
+
+
+
+
+
+
+
+
+-----------------Data Sets ------------------------------------------
+2022_to_2023_all_matches_preprocessed_v1.csv
+
+ - getRequiredRunRate_first_innings - done 
+ - df_matches['date'] - columns inserted 
+ - for col in object_columns :
+    df_matches[col].replace({'-': np.NaN , '':np.NaN , 'nan':np.NaN},inplace=True) - Done for - , nan to be listed as none 
+ - #Remove the star value in Batsman High Score
+ - df_matches[columns_to_convert] = df_matches[columns_to_convert].astype(float) - Converting Object type as float 
+ - column_to_fill = 'req_run_rate'
+df_matches[column_to_fill] = df_matches[column_to_fill].fillna(10)
+ - for column in mean_column_to_fill:
+    df_matches[column] = df_matches[column].fillna(df_matches[column].mean())
+
+- df_matches.insert(54,"y_is_wicket_fallen", " ")
+	current_index = 0
+
+		while current_index < len(df_matches):
+   		if df_matches['wickets_fallen'][current_index] > 0:   
+     		 df_matches['y_is_wicket_fallen'][current_index] = 1
+   		else:
+      		df_matches['y_is_wicket_fallen'][current_index] = 0
+      
+   		current_index = current_index + 1
+
+
+Important 
+df_matches['date'] = pd.to_datetime(df_matches['date']) - Run this because when importing it will under the object
+
+
+
+
+
+
+GRACE GOD BLESS !!! ⛪🧡✝🧡⛪
+---------------------------------- NoteBook Details ------------------------------------------------------------
+
+
+- GRACE_RNN_IMPL_V2_extra_features - the first notebook with the v2 data set which take the last 5 overs analyses the data. changed the decision boundary as well. 
+
+
+
+
+- GRACE_TTE_RNN_Wicket_Falling_V3_Advance_features -  This is the first notebook on time to event using LSTM Data.
+
+
+
+
+
+
+
+
+
+-------------------- High Impact Moments -------------------------------------------
+
+
+1. Wicket Falling or Not. 
+2. 4 Scored or not.
+3. 6 Scored or not.
+4. Number of Boundaries.
+5. Next Over Runs. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
