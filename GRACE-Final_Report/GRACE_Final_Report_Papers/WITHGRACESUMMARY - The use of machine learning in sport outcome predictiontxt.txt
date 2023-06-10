@@ -1,0 +1,205 @@
+PRAISE THE LORD ALMIGHTY FATHER Thank You JESUS Praise You JESUS Forever May the HOLY SPIRIT Guide Us GOD BLESS !!! 
+
+The use of machine learning in sport outcome prediction: A review
+
+- Sport predictions are usually treated as a classification problem by which one class is predicted (win/loss/draw)
+-  Delen et al. (2012), Soto Valero (2016), and Elfrink (2018) showed
+that the classification-type models predict the game outcomes better than regression-based classification models. Feature selection and extraction have an important role in the accuracy of ML algorithm.
+
+- In theory, the goal of a feature selection and feature extraction is to find an optimal feature subset (one that maximizes the model accuracy).
+- In this article, we give a broader literature review in the field of sport outcome predictions using classification, analysis, and
+comparison. For this purpose, several review papers in the related fields have been analyzed (Bunker & Susnjak, 2019;
+Bunker & Thabtah, 2019; Haghighat et al., 2013; Jovic et al., 2015; Koseler & Stephan, 2018). Haghighat et al. (2013)
+reviewed scientific papers related to sport outcome predictions based on data mining techniques. 
+
+- In this review paper , Consideration is given to papers that concern at least one ML algorithm in team sport outcome prediction or papers that extract useful facts and regularities from the input dataset.
+
+2 | DATA COLLECTION
+
+ - By analyzing the work of other researchers, it is easy to notice that information sources are usually the official sport organization websites. 
+ *-  Result is comparison is hard becuase different researches use different games.
+ - The most commonly used ML model in predicting game outcomes are neural networks, for example, feed-forward,
+multilayer perceptron, convolutional, radial basis function, probabilistic, and so on.
+
+- When multiple ML algorithms are used in a particular paper, the best results of each algorithm are included.
+
+
+For Cricket
+
+- Kampakis and Thomas (2015) English 20 over country cricket cup, 
+- seasons 2009–2014 (cricket)www.cricinfo.com 
+- Naïve Bayes, logistics regression, random forests, gradient boosted , decision trees
+
+- Mustafa et al. (2017) Indian Premier League 2014/2015, World Cup 2015 (cricket)
+- Twitter, cricinfo.com,cricbuzz.com and official team pages
+- SVM, Naïve Bayes, linear regression
+
+
+3 | FEATURE SELECTION AND EXTRACTION
+
+- The input feature set usually contains some of the features suggested by experts’ experience. The features are a combination of other known, publicly available features. These features usually refer to the league standings or represent one of the required, usually expert suggested features.
+
+- The features are a combination of other known, publicly available features. These features usually refer to the league standings or represent one of the required, usually expert suggested features.
+
+- Most authors use the feature selection and feature extraction methods in the data preparation phase. Authors first
+define the input feature set based on expert experience and, if necessary, using the feature extraction method, calculate
+the missing values of defined input features.
+
+- Research comparing the effect of the ML algorithm before and after the use of the feature selection are very rare.
+
+3.1 | Feature selection based on experts’ experience
+
+- Each analyzed paper involves the feature selection in the form of selecting an initial feature set(s). This section elaborates only on papers that use the additional feature selection based on the author's experience or a combination of initial feature sets. 
+
+- The authors used two feature sets (basic and expert) on three different datasets. The expert feature set achieved better accuracy only when using
+LogitBoost and artificial neural networks. 
+
+- A relatively small number of papers use additional feature selection based on experts experimenting or a combination of initial feature sets, with the purpose of finding optimal feature subsets to maximize the proposed model accuracy. Optimizing the feature sets achieved better prediction
+
+3.2 | Feature selection based on feature selection methods
+
+- More Sophisticated feature selection methods are used to maximize relevance and minimize redundancy. Feature selection includes calculating a feature subset containing only relevant features. Feature selection methods are usually classified into filters, wrappers, embedded, and hybrid methods (Jovic et al., 2015).
+
+- Loeffelholz et al. (2009) used the Signal-to-Noise Ratio (SNR) feature selection method and selected 4 out of 22 most
+representative features from the initial feature set
+
+The reduced feature set yields better results than those of the initial feature set.
+
+- For quality measures, Pearson correlation, and recursive feature elimination as a feature selection method from the initial set of 500 features. 
+
+- The selectedfeatures were used as input in various ML algorithms. The authors also used PCA to improve the model performance
+and Naïve Bayes, logistic regression, random forests, gradient boosted decision trees to predict the outcome of English
+County 20 over Cricket Matches. The performance of each predictive algorithm was assessed during the previous year's
+data as the training dataset and the year in question as to the test.
+
+- Horvat et al. (2018) proposed a model for feature selection based on the feature information gain. The authors presented two feature selection variants and two data preparation algorithms. The first feature
+selection variant uses features whose information gain is higher than zero while the second feature selection variant
+uses features whose information gain is higher than the average feature information gain of a particular team. 
+
+- It is difficult to conclude which feature selection method provides the best results. The most commonly used are filter feature selection methods which select features based on a performance measure regardless of the modeling algorithm. Filter feature selection methods characterize dimensionality reduction before using the modeling algorithm.
+
+- The comparison of the results before and after feature selection is not shown in most articles, but the assumption is that
+results are better after using feature selection.
+
+*** Researchers generally use basic game statistics related to a particular sport to
+predict outcomes and often include league standing features obtained by feature extraction. Other feature sets such as
+psychological state or social media data are rarely used. Many researchers point out that increasing the feature set could
+lead to better prediction results.
+
+
+- The analysis of the papers revealed that early papers in the field of predicting sport outcomes often used only feature selection by the authors themselves (based on their knowledge or past experience). Recently, more and more authors use
+more sophisticated feature selection methods. The general conclusion evident from the analyzed papers is that feature
+selection and feature extraction certainly contribute to increasing the efficiency of the ML models. Most papers do not
+show a comparison table with prediction results using the initial feature set and results obtained by using some type of
+feature selection. The papers with the presented improvements of the prediction results using additional feature selection are Loeffelholz et al. (2009), Trawinski (2010), Buursma (2011), Ping-Feng et al. (2017), Ganguly and Frank (2018),
+and Horvat et al. (2018). Other researchers only note that additional feature selection contributes to better prediction
+results. 
+
+- Ideally, several different feature sets should be tested when proposing an outcome prediction model and,
+accordingly, the one that returns the best result should be selected. The assumption is that using wrapper or embedded
+feature selection methods could lead to improved prediction results. Embedded filter selection methods that perform
+feature selection during the modeling algorithm's execution, hybrid feature selection methods that would include elements of the filter feature selection methods, and the wrapper filter selection methods are of particular interest
+
+
+4 | EVALUATION OF THE RESULTS
+
+- Neural networks have been the mostly used model since the beginning of using the ML in predicting the sport outcome (Grossberg, 1988; Zhang, 2000). Even though there are many new ML models, the trend of using neural networks continues with neural networks still being the most widely used ML model in predicting sport outcomes. T
+
+References - Mustafa et al. (2017) 
+Best accuracy (%)  - 87.90 
+Type of ML model  - SVM 
+Seasons - 1 
+Number of features - 3 
+Feature selection  - ✓ 
+Feature extraction - ✓ 
+Model evaluation   - 10-fold CV
+
+
+References - Kampakis and Thomas (2015)
+Best accuracy (%)  - 62.40
+Type of ML model  - Naïve Bayes
+Seasons - 6
+Number of features -  31/500+
+Feature selection  - ✓ 
+Feature extraction - ✓ 
+Model evaluation   - Segmentation Dataset
+
+
+4.4 | Cricket
+
+---Kampakis and Thomas (2015) ---
+
+Models that were used - Kampakis and Thomas (2015) used Naïve Bayes, logistic regression, random forests, and gradient boosted decision trees
+to predict the outcome of English County 20 over Cricket Matches.
+
+
+Data  - The performance of each predictive algorithm was assessed using the previous year's data as the training dataset and the year in question as the test.
+
+
+Testing the Model  - Each model was tested over six seasons and achieved the accuracies of 62.4% for Naïve Bayes, 60.1% for logistic regression, 55.6% for random forests, and 57.2% for decision trees
+
+--- Mustafa et al. (2017) ---
+
+Model - they used three different ML algorithms (SVM, Naïve Bayes, logistic regression) that depend on crowd
+opinion (total number of tweets before the game for each team, fans sentiments, and fans score predictions) on Twitter
+and implemented in WEKA. The authors collected tweets of 109 games and extracted three features (tweet volume,
+aggregated fans sentiments, score prediction).
+
+
+Data - The authors collected tweets of 109 games and extracted three features (tweet volume,
+aggregated fans sentiments, score prediction). The best result of 87.90% was achieved by using SVM method, followed
+by Naïve Bayes (86.28%) and logistic regression (85.73%). 
+
+
+Notes -  In the paper by Mustafa et al. (2017), the authors published an interesting
+research where they used three different ML algorithms (SVM, Naïve Bayes, logistic regression) that depend on crowd
+opinion (total number of tweets before the game for each team, fans sentiments, and fans score predictions) on Twitter
+and implemented in WEKA.  TThey also indicated that the usage of social networks can be as informative as professional newspaper media.
+
+
+
+4.6 | Summary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 | CONCLUSIONS
+
+
+Sport outcome predictions are most commonly used by supervised ML, more precisely the classification methods. There are also examples in which the outcome of a sport event is predicted by regression
+methods but in that case, usually a spread is calculated and based on the spread, a winner team is determined.
+
+
+- a few cases in which the outcome of a sport event is predicted by using unsupervised or reinforcement ML algorithms. Unsupervised learning methods are usually used in cases where the final outcome of the
+FIGURE 22 Progress of the ML models related to baseball
+FIGURE 21 Progress of the ML models related to cricket
+24 of 28 HORVAT AND JOB
+process is unknown.
+
+The review opened up suggestions for future research that can certainly help in achieving better prediction results.
+Some of the suggestions are to improve the training methods, use multiple ML algorithms in finding the optimal one,
+FIGURE 23 Dependence of accuracy to the number of references
+
+improve feature selection methods, optimize ML parameters, use optimal and relevant dataset, find patterns among
+data, and so on. Also, research has shown that using alternative, newly proposed ML algorithms, can achieve good, in
+some cases, even better prediction results. Most authors use feature selection based on expert's experience or filter feature selection methods. It would be very important to explore the impact of wrapper and embedded feature selection
+methods, as well as the impact of hybrid feature selection methods

@@ -1,0 +1,96 @@
+PRAISE THE LORD ALMIGHTY FATHER Thank You JESUS Praise You JESUS May the HOLY SPIRIT Guide Us GOD BLESS !!!
+
+wasp method
+
+Uses factors such as 	-> ease of scoring on the day
+			-> according to the pitch
+			-> weather and boudary size 
+
+-Pitch conditions, weather condition, boundary size, the average team scores, opponent bowler’s performance
+and ground average score are the essential parts
+
+- The factors affecting the model are batsman’s records, ground’s records, bowler’s records, pitch records, 
+weather records,
+
+Total average = (natural factors + players’ records + others) / 3
+Total average = ((Pitch condition + weather records)/2 + (batsman’s records + bowler’s records)/2 + other
+factors) / 3
+
+
+Grounds average score = (Last 5 matches average score (independent of teams) + Last 5 matches average score 
+on that ground by that team) / 2
+Weather Condition = (Last 5 matches score in that weather all over the world + Last 5 matches score in that 
+weather in the particular continent) / 2
+Batsman’s Records = (Last 5 matches record ( regardless of team ) + Last 5 matches record on that ground + 
+Last 5 matches record against that opponent + Last 5 matches record against that bowler) / 4
+Bowler’s Records = (Last 5 matches record (regardless of team) + Last 5 matches record on that ground + Last 5 
+matches record against that opponent + Last 5 matches record against that bowler)/4
+
+-Team batting first - final score is predicted 
+	- The batting-first model estimates the additional runs likely to be scored as a function of the nummber of balls and wickets remainig.
+	- Predicts the final score after every over using the parameters.
+	- 
+
+
+
+-Team batting second - probability of reaching that score 
+	-Estimates the probablity of winning as a function of balls and wickets remaining , runs score to date , target score		
+
+
+
+
+Data -> The models are based on a databse of all non-shortened One Data International Mathces and t20 games played between top-eight contries since late 2006.
+
+
+Note - This research paper states that required run rate will not qualitiatively show the real picture as thery fail to take into the account the quality of batting tea and the quality of the bowling attack. wasp is a very good quantitative paramter. 
+
+ - wasp is a mathametical tool for predicting runs and outcomes of games in ODI and T20
+
+ - Features such as the pitch and climate and boundary dimensions. 
+
+ - This Paper highlights two areas way wasp will be not be accurate
+	- When a batsman changes his order (Batsman retired out)  becuase the postion in unpredictable 
+	- flops in a case where the team passes the projected score batting first.
+
+
+ALGORITHM 
+
+
+V(b, w) is the predictable further runs for the rest of the innings
+b - number of deliveries that were performed 
+w - number of wickets fallen 
+
+E (b, w) - predictable runs 
+R (b, w) - probability of a wicket 
+
+Both function E and R are calucalted to the next upcoming delivery
+
+V(b, w) = E(b,w) + R(b,w)*V(b+1,w+1) + (1-R(b,w))*V(b+1,w)
+
+After all balls are bowlen - V (b*, w) = 0 
+
+This implies that the approximations for V (b, w) in occasional circumstances can be determined by, only to
+some extent on the projected runs and the likelihood of falling a wicket on that ball, and more about the values 
+of V (b + 1, w) and V (b + 1, w + 1), which will mostly be dogged by dense data points. The model for the team 
+batting second is a bit more complex, but uses fundamentally the same logic.
+
+
+
+
+MY POINTS WITH GRACE
+
+ - Have used the last 5 match records of that bowler 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

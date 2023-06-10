@@ -65,8 +65,9 @@ GRACE GOD BLESS !!! ⛪🧡✝🧡⛪
 
 - GRACE_TTE_RNN_Wicket_Falling_V3_Advance_features -  This is the first notebook on time to event using LSTM Data.
 
+ - GRACE_RNN_IMPL_V5_next_over_boundaries_6_countries - Next over number of Boundaries , and Have used filtering to filter the Top 6 Countries. 
 
-
+- GRACE_RNN_IMPL_V5.1_next_over_boundaries_8_countries - Next over number of Boundaries , and Have used filtering to filter the Top 8 Countries.
 
 
 
@@ -87,6 +88,19 @@ GRACE GOD BLESS !!! ⛪🧡✝🧡⛪
 
 
 
+GRACE GOD BLESS !!! ✝🧡⛪🧡🧡
+---------------------------- GRACE - HIGH IMPACT MOMENTS ANALYSIS ---------------------------------------------
+
+1.  Score Analysis 
+	-Next Over Score 
+
+2. Boundary Analysis 
+	- Boundary Percentage next over
+	- Number of Boundaries Scored in the next over 
+
+3.Wicket Falling analysis 
+	- Wicket Falling or Not using - RNN 
+	- Time to Event - Wicket Falling 
 
 
 
