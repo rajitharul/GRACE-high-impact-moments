@@ -1,0 +1,21 @@
+
+
+Cricket Match Analytics Using the Big Data Approach Mazhar Javed Awan 
+
+Sport analytics for cricket game results using machine learning: An experimental study Kumash Kapadia
+
+
+UNIQUE APPROACH FOR CRICKET MATCH OUTCOME
+PREDICTION USING XGBOOST ALGORITHMS
+NIMMI WEERADDANA1
+ , SAMINDA PREMARATNE
+
+
+1 .IPL CRICKET SCORE AND WINNING PREDICTION USING MACHINE LEARNING TECHNIQUES
+Nikhil Dhonge*1, Shraddha Dhole*2, Nikita Wavre*3, Mandar Pardakhe*4, Amit Nagarale*5
+--- Not much of quality paper
+
+2. Kampakis and
+Thomas (2015)
+
+3.Ul Mustafa (2017)Predicting The Cricket Match Outcome Using Crowd Opinions On Social Networks  A Comparative Study Of
